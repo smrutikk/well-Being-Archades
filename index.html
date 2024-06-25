@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Well-Being Arcade</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .button {
+          background-color: #000000;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          display: inline-block;
+          font-size: 16px;
+          margin: 31px 2px;
+          cursor: pointer;
+          border-radius: 30px;
+        }
+    </style>
+  </head>
+  <body>
+    <!--navbar-->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark" >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">Well-being Arcade</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#games">Games</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/Report.html">Report</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#mindfulnessul activities"></a>
+            </li>
+          </ul>
+          
+          <div class="mx-2">
+            <!--mx-2 here is x axis me 2 ki margin-->
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal">
+              
+              <a href="login.html" style="text-decoration: none; color: white;">Login</a>
+            </button>
+            <button
+              class="btn btn-danger"
+              data-bs-toggle="modal"
+              data-bs-target="#signupModal"
+            >
+              Sign Up
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    
+      <section id="carousel">
+        <div class="container-fluid-lg">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="images/img5.jpg"
+                  class="d-block w-100"
+                  alt="Mental health Well-being"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/2.jpeg"
+                  class="d-block w-100"
+                  alt="Mental health Well-being"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="images/photo-1480497490787-505ec076689f (1).jpg"
+                  class="d-block w-100"
+                  alt="Mental health Well-being"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleFade"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    
+        </div>
+      </section>
+
+      <h1 style="margin-left: 384px; margin-top: 50px;">We provide assistance with these topics</h1>
+      <div> 
+        <img src="images/depression new.png" alt="" style="margin-left: 7%; padding: 50px; padding-left: 72px; width: 328px;">
+        <img src="images/Anxiety service new.png" alt="" style="padding: 50px; width: 300px;">
+        <img src="images/Anger issues service new.png" alt="" style="padding: 50px; width: 300px;">
+        <img src="images/Insomnia new.png" alt="" style="padding: 50px; width: 300px;">
+      </div>
+
+
+      <!--Cards--> 
+
+      <!--1st row-->
+      <div class="card-group bs-secondary-color-rgb" id="mindfulness">
+        <div class="card mt-3">
+          <img src="images/breathing img.png" class="card-img-top" alt="..." style="object-fit: cover;
+          width: 261px;
+          margin-left: 80px;
+          margin-top: 15px;">
+
+          <div class="card-body">
+            <h5 class="card-title">Breathing Exercise</h5>
+            <p class="card-text">Energize your body and calm your mind with our revitalizing breathing exercises – a simple yet powerful way to enhance focus, reduce stress, and promote overall well-being.</p>
+            <a href="breathing.html" class="btn btn-primary" style="margin-left: 184px;">Explore</a>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <img src="images/meditate.png" class="card-img-top" alt="..." style="object-fit: cover;
+          width: 261px;
+          margin-left: 105px; 
+          margin-top: 38px;">
+          <div class="card-body">
+            <h5 class="card-title">Meditation</h5>
+            <p class="card-text">Immerse yourself in tranquility with our guided meditations, cultivating inner peace and mindfulness for a harmonious and balanced life.</p>
+            <a href="https://youtube.com/playlist?list=PLWWG_PHempixUXiBVWTR1be51OBqYFqkW&feature=shared" class="btn btn-primary" style="margin-left: 184px;">Explore</a>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <img src="images/Journaling.png" class="card-img-top" alt="..." style="object-fit: cover;
+          width: 261px;
+          margin-left: 106px;">
+          <div class="card-body">
+            <h5 class="card-title">Journaling</h5>
+            <p class="card-text">Journaling is the art of capturing your thoughts, experiences, and emotions in written form, a private space to explore and reflect on life's journey.</p>
+            <a href="https://candy-avatar-c72.notion.site/5-minute-Journal-c692b93436da4498877aba6c57cdd0c3?pvs=4" class="btn btn-primary" style="margin-left: 184px;">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!--2nd row-->
+      <div class="card-group">
+        <div class="card mt-3">
+          <img src="images/Yoga.png" class="card-img-top" alt="..." style="object-fit: cover;
+          width: 261px;
+          margin-left: 80px;
+          margin-top: 50px;">
+
+          <div class="card-body">
+            <h5 class="card-title">Yoga</h5>
+            <p class="card-text">Energize your body and calm your mind with our revitalizing breathing exercises – a simple yet powerful way to enhance focus, reduce stress, and promote overall well-being.</p>
+            <a href="yoga.html" class="btn btn-primary" style="margin-left: 184px;">Explore</a>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <img src="images/solitude.jpg" class="card-img-top" alt="..." style="object-fit: cover;
+          width: 261px;
+          margin-left: 105px;">
+          <div class="card-body">
+            <h5 class="card-title">Solitude</h5>
+            <p class="card-text">Immerse yourself in tranquility with our guided meditations, cultivating inner peace and mindfulness for a harmonious and balanced life.</p>
+            <a href="https://open.spotify.com/artist/7vgzPGibRcse3QY4d9316n?si=YuMr58XbTPG0xBGht1VRZA" class="btn btn-primary" style="margin-left: 184px;">Explore</a>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <img src="images/Mindful reading.jpg" class="card-img-top" alt="..." style="object-fit: cover;
+          width: 261px;
+          margin-left: 106px;">
+          <div class="card-body">
+            <h5 class="card-title">Mindful Reading</h5>
+            <p class="card-text">Journaling is the art of capturing your thoughts, experiences, and emotions in written form, a private space to explore and reflect on life's journey.</p>
+            <a href="mindful_reading.html" class="btn btn-primary" style="margin-left: 184px;">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!--Game start page-->
+
+      <div id="games">
+      <h1 style="margin-left: 595px; margin-top: 45px;">Find your way out! </h1>
+      <img src="Game elements/boy.png" alt="" style="margin-left: 230px; margin-top: 90px;">
+      <img src="images/arrow-right.png" alt="" style="margin-left: 70px; margin-top: 90px;">
+      <img src="images/maze.png" alt="" style="margin-left: 100px; margin-top: 80px;">
+      <img src="images/arrow-right.png" alt="" style="margin-left: 70px; margin-top: 90px;">
+      <img src="Game elements/treasure 1.png" alt="" style="margin-left: 130px; margin-top: 90px;">
+      </div>
+
+      <!--button-->
+    <button class="button" style="
+    margin-left: auto;
+    margin-right: 44%;
+    display: block;
+    margin-top: 92px;"><a href="Game_Web_Pages/Page1.html" target="_blank">Play Game</a></button>
+
+    <div class="card-group bs-secondary-color-rgb">
+        <div class="card mt-3">
+          <img src="images/Counselor2.png" class="card-img-top" alt="..." style="object-fit: cover;
+          width: 261px;
+          margin-left: 80px;
+          margin-top: 15px;">
+
+          <div class="card-body">
+            <h5 class="card-title">Name</h5>
+            <p class="card-text">Contact No.: +987 654 3210 </p>
+            <p>Desig.: Clinical Psychologist</p>
+            <p>Email: counselor1@example.com</p>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <img src="images/Counselor1.png" class="card-img-top" alt="..." style="object-fit: cover;
+          width: 261px;
+          margin-left: 105px; 
+          margin-top: 38px;">
+          <div class="card-body">
+            <h5 class="card-title">Name</h5>
+            <p class="card-text">Contact No.: +111111111</p>
+            <p>Desig.: Marriage and Family Therapist</p>
+            <p>Email: counselor2@example.com</p>
+          </div>
+        </div>
+        <div class="card mt-3">
+          <img src="images/Counselor3.png" class="card-img-top" alt="..." style="object-fit: cover;
+          width: 261px;
+          margin-left: 106px;">
+          <div class="card-body">
+            <h5 class="card-title">Name</h5>
+            <p class="card-text">Contact No.: +123 456 7890 </p>
+            <p >Desig.: Clinical Mental Health Counselor</p>
+            <p>Email: counselor3@example.com</p>
+          </div>
+        </div>
+</div>
+
+  
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
