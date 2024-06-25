@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pie Chart, Bar Graph, and Table</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body style="background-image: url('https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80');">
+    <div class="container">
+        <div class="left">
+            <div class="chart-container">
+                <canvas id="pie-chart"></canvas>
+            </div>
+        </div>
+        <div class="right">
+            <br><br><br>
+            <table>
+                <tr>
+                    <th>Result</th>
+                    <th>No. Of Students</th>
+                </tr>
+                <tr>
+                    <td>Pass</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>Fail</td>
+                    <td>10</td>
+                </tr>
+            </table>
+            <div class="bar-chart-container">
+                <canvas id="bar-chart"></canvas>
+            </div>
+        </div>
+    </div>
+<br><br><br>
+    <script>
+        // Data for the pie chart
+        var pieData = {
+            labels: ["PASS", "FAIL"],
+            datasets: [
+                {
+                    data: [40, 10],
+                    backgroundColor: ["#72F1B7", "#FFBF00"]
+                }
+            ]
+        };
+              
+        // Data for the bar chart
+        var barData = {
+            labels: ["PASS", "FAIL"],
+            datasets: [
+                {
+                    label: "No. Of Students Pass and Fail",
+                    data: [40, 10],
+                    backgroundColor: ["#72F1B7", "#FFBF00"]
+                }
+            ]
+        };
+
+        var pieCtx = document.getElementById("pie-chart").getContext("2d");
+        var barCtx = document.getElementById("bar-chart").getContext("2d");
+
+        // Create the pie chart
+        var pieChart = new Chart(pieCtx, {
+            type: "pie",
+            data: pieData
+        });
+
+        // Create the bar chart
+        var barChart = new Chart(barCtx, {
+            type: "bar",
+            data: barData
+        });
+    </script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            width: 80%;
+            margin: auto;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .left, .right {
+            width: 48%;
+        }
+
+        .chart-container, .bar-chart-container {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #11796b;
+            text-align: left;
+            padding: 8px;
+        }
+
+        th {
+            background-color: #e8b9b9;
+        }
+
+        td {
+            background-color: #d298db;
+        }
+    </style>
+</body>
+</html>
