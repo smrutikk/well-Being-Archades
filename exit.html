@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .arrow-container {
+            margin-top: 20px;
+        }
+
+        .arrow {
+            max-width: 50px;
+            height: auto;
+        }
+    </style>
+    <title>Test Completion</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Congratulations!!</h1>
+        <p>You have successfully finished the Game.</p>
+        <img src="..\images\congratulatons.png" alt="Congratulations Image">
+        <button id="endButton" onclick="redirectToReport()">See Suggestions</button>
+        <div class="arrow-container">
+            <img src="..\images\arrow.jpg" alt="Right Arrow" class="arrow">
+        </div>
+    </div>
+    <script>
+        function redirectToReport() {
+            window.location.href = "../Suggestion.html";
+        }
+    </script>
+</body>
+</html>
